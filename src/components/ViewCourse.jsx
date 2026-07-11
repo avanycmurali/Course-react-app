@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import NavigationBar from './NavigationBar'
 
 const ViewCourse = () => {
     const[data,changeData]=useState([])
@@ -19,6 +20,7 @@ const ViewCourse = () => {
 
     return (
         <div>
+            <NavigationBar/>
 
             <table class="table">
                 <thead>
