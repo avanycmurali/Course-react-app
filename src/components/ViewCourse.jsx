@@ -10,7 +10,11 @@ const ViewCourse = () => {
                 
                 changeData(response.data)
             }
-        ).catch()
+        ).catch(
+            (error)=>{
+                console.log(error)
+            }
+        )
     }
     useEffect(
         ()=>{
